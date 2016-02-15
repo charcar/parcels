@@ -5,9 +5,16 @@ public class ParcelTest {
 
   @Test
   public void newParcel_instantiatesParcelCorrectly() {
-    
+    Parcel testParcel = new Parcel(3, 4, 5, 12.5);
+    assertEquals(true, testParcel instanceof Parcel);
   }
 
+  @Test
+  public void newParcel_calculateVolume_16() {
+    Parcel testParcel = new Parcel(2, 2, 4, 12.5);
+    assertEquals(16, testParcel.volume());
+  }
+  //
   // @Test
   // public void newTriangle_instantiatesCorrectly() {
   //   Triangle testTriangle = new Triangle(2, 2, 2);
