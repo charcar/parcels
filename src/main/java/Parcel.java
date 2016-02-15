@@ -1,6 +1,5 @@
-// parcel will have height, width, length, weight
-// volume method will multiply h, w, l and return Int volume
-//
+// cost to ship method speed of delivery, distance, dimensions, weight).
+
 public class Parcel {
   private int mHeight;
   private int mWidth;
@@ -17,6 +16,11 @@ public class Parcel {
   public int volume() {
     int volume = (mHeight * mWidth * mLength);
     return volume;
+  }
+
+  public double shippingCost() {
+    double shippingEstimate = (double) (volume() * mWeight);
+    return shippingEstimate;
   }
 
   // in case we want to call them later in the output

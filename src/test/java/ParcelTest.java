@@ -14,6 +14,14 @@ public class ParcelTest {
     Parcel testParcel = new Parcel(2, 2, 4, 12.5);
     assertEquals(16, testParcel.volume());
   }
+
+  @Test
+  public void newParcel_calculateShippingCost_20() {
+    Parcel testParcel = new Parcel(2, 2, 4, 3.85);
+    assertEquals(4734734, testParcel.shippingCost(), 0);
+  }
+
+
   //
   // @Test
   // public void newTriangle_instantiatesCorrectly() {
