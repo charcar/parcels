@@ -1,20 +1,36 @@
 <h1>Parcel Calculator</h1>
 <h3>Enter in all the information and we'll give you a shipment cost estimate.</h3>
 
-<form action='/triangle' method='get'>
+<form action='/shippingResult' method='get'>
   <div class = "form-group">
-    <label for="side1">Side 1</label>
-    <input id="side1" name="side1" class="form-control" type="text">
+    <label for="height">Height of Parcel</label>
+    <input id="height" name="height" class="form-control" type="text">
   </div>
 
   <div class = "form-group">
-    <label for="side2">Side 2</label>
-    <input id="side2" name="side2" class="form-control" type="text">
+    <label for="width">Width of Parcel</label>
+    <input id="width" name="width" class="form-control" type="text">
   </div>
 
   <div class="form-group">
-    <label for="side3">Side 3</label>
-    <input id="side3" name="side3" class="form-control" type="text">
+    <label for="length">Length of Parcel</label>
+    <input id="length" name="length" class="form-control" type="text">
+  </div>
+
+  <div class="form-group">
+    <label for="weight">Weight of Parcel (Accepts decimals)</label>
+    <input id="weight" name="weight" class="form-control" type="text">
+  </div>
+
+  <div class="form-group">
+    <label for="distance">Approximate miles to destination</label>
+    <input id="distance" name="distance" class="form-control" type="text">
+  </div>
+
+<!--SPEED , RADIO BUTTON?  -->
+  <div class="form-group">
+    <label for="speed">Speed (1, 2, or 3)</label>
+    <input id="speed" name="speed" class="form-control" type="text">
   </div>
 
   <button type="submit" class="btn">Go</button>

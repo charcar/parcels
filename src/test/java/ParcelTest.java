@@ -15,10 +15,11 @@ public class ParcelTest {
     assertEquals(16, testParcel.volume());
   }
 
+// IF CASTING TO DOUBLE, NEED DELTA (0), IF CASTING TO INT, NONE NEEDED
   @Test
-  public void newParcel_calculateShippingCost_20() {
+  public void newParcel_calculateShippingCost_30point8() {
     Parcel testParcel = new Parcel(2, 2, 4, 3.85);
-    assertEquals(4734734, testParcel.shippingCost(), 0);
+    assertEquals(30.8, testParcel.shippingCost(), 0);
   }
 
 

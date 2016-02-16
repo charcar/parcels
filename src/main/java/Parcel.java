@@ -5,6 +5,8 @@ public class Parcel {
   private int mWidth;
   private int mLength;
   private double mWeight;
+  private int mDistance;
+  private int mSpeed;
 
   public Parcel(int height, int width, int length, double weight) {
     mHeight = height;
@@ -19,8 +21,9 @@ public class Parcel {
   }
 
   public double shippingCost() {
-    double shippingEstimate = (double) (volume() * mWeight);
-    return shippingEstimate;
+    double shippingEstimate = (double) ((volume() * mWeight) / 2);
+    double totalShippingCost = (double) ((shippingEstimate + (mDistance/50) * (mSpeed / 2));
+    return totalShippingCost;
   }
 
   // in case we want to call them later in the output
