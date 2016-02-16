@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ParcelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-02-16T00:09:16" hostname="epicodus-60.local" time="0.002">
+<testsuite name="ParcelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-02-16T00:39:00" hostname="epicodus-60.local" time="0.001">
   <properties/>
   <testcase name="newParcel_calculateShippingCost_30point8" classname="ParcelTest" time="0.001"/>
   <testcase name="newParcel_calculateVolume_16" classname="ParcelTest" time="0.0"/>
